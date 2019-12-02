@@ -1,0 +1,189 @@
+/*Group Members:
+--Tassan Stewart 620108238
+--Tonian Hyman 620108397
+--Abigail Miles 620097489 */
+
+.container{
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content content";
+
+  grid-template-columns: 185px 1fr;
+  grid-template-rows: auto 1fr auto;
+
+
+  height: 100vh;
+  
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  
+
+  grid-area: header;
+  padding: 0px 0px 0px 20px;
+  font-size: 8px;
+  height: 35px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+
+nav {
+  grid-area: nav;
+  
+  text-align: left;
+  width: 70%;
+  height: 100%;
+  background: #F3F2F2;
+  padding: 10px 0px 0px 20px;
+}
+
+#icon1{
+  width:  15px;
+  height: 15px;
+  position: relative;
+  top: 7px;
+  padding: 5px 5px 5px 0px;
+}
+
+#icon2, #icon3, #icon4{
+  width:  14px;
+  height: 14px;
+  position: relative;
+  top: 7px;
+  padding: 5px 5px 5px 0px;
+}
+
+nav {
+  text-decoration: none;
+  font-size: 9px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  
+}
+
+p:hover {
+  color: #76E581;
+  cursor: pointer;
+}
+
+article {
+  grid-area: content;
+  width: 100%;
+  background-color: white;
+}
+
+h2{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+input[type=text] {
+  background: #F3F2F2;
+  width: 55%;
+  height: 6%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0px 0px 10px 0px;
+}
+
+select{
+  background: #F3F2F2;
+  width: 55%;
+  height: 6%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0px 0px 10px 0px;
+}
+
+#descrip{
+  height: 10%;
+}
+
+label{
+  font-size: 9px;
+  font-weight: bold;
+}
+
+
+input[type=submit]{
+  
+  height: 0.6%;
+  color: white;
+  padding: 8px 20px 10px 20px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=submit] {
+  background-color: blue;
+  width: 20%;
+}
+
+#filter1, #filter2, #filter3{
+  color: black;
+  background-color: white;
+  height: 0.4%;
+  padding: 8px 20px 10px 20px;
+  margin: 20px 0px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+
+#filter1:hover{
+  background-color: blue;
+  color: white;
+}
+
+#filter2:hover{
+  background-color: blue;
+  color: white;
+}
+
+#filter3:hover{
+  background-color: blue;
+  color: white;
+}
+
+#new_issue{
+  background-color: #45a049;
+  width: 20%;
+  display: inline;
+  margin: 0px 0px 0px 700px;
+  padding: 8px 20px 10px 20px;
+  height: 0.6%;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+#new_issue:hover{
+  background-color: blue;
+}
